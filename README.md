@@ -1,4 +1,4 @@
-# README# @tne/common
+# @tne/common
 Library completely written with __typescript__, common libs, functions, helpers and other stuff for Node.Js environment.
 
 <a name="main_menu"></a>
