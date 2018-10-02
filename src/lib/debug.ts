@@ -38,6 +38,6 @@ export function die() {
 }
 
 export function dd(...args: any[]) {
-	dump(args);
+	dump.apply(this, args);
 	die();
 }
