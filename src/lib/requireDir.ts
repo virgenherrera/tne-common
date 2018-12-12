@@ -2,7 +2,7 @@ import { readdirSync } from 'fs';
 import { join, extname, parse } from 'path';
 import { pathExists } from './fsExists';
 
-const allowedFileExtensions = ['.js', '.json'];
+const allowedFileExtensions = ['.ts', '.js', '.json'];
 
 export async function requireDir(...pathSegments: string[]): Promise<any> {
 	const path = join(...pathSegments);
