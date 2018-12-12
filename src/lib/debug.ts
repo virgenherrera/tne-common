@@ -5,7 +5,7 @@ export function dump(...args: any[]) {
 
 	args.forEach((arg, k) => {
 		// Notify about which arg are dumping
-		console.log(`${nl}Argument: ${k + 1}`);
+		console.log(`${nl}Argument: ${k}`);
 
 		// print type
 		console.log(`Type: ${typeof arg}`);
@@ -38,6 +38,6 @@ export function die() {
 }
 
 export function dd(...args: any[]) {
-	dump.apply(this, args);
+	dump(...args);
 	die();
 }
